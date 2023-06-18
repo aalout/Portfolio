@@ -1,0 +1,49 @@
+const useStyles = makeStyles((theme)=>({
+    mainFeaturesPost:{
+      position: "relative",
+      color: theme.palette.common.white,
+      marginBottom: theme.spacing(4),
+
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center"
+
+    },
+    mainFeaturesPostContent: {
+      position: "relative",
+      padding: theme.spacing(3),
+
+
+    }
+<AppBar sx = {{bgcolor: theme.palette.header.main}}  position="fixed">
+      <Container>
+        <Toolbar >
+          <IconButton edge="start"  color = "inherit" aria-label="menu" sx={{mr: 3}}>
+            <MenuIcon sx = {{ color: theme.palette.primary.main }}  />
+          </IconButton>
+          <Typography  variant="h6" sx={{ flexGrow: 1, color: theme.palette.primary.main,  }} >Илья Волков</Typography>
+          <Box>
+            <Button sx = {{ mr: 1, bgcolor: theme.palette.primary.main}}  variant="contained">Контакты</Button>
+          </Box >
+          <Button sx = {{ bgcolor: theme.palette.primary.main }} variant="contained" href="https://vk.com/aalout" target="_blank">Написать мне</Button>
+        </Toolbar>
+      </Container>
+    </AppBar>
+
+}))
+  const classes = useStyles();
+
+
+
+
+
+
+
+
+
+
+      <Container maxWidth="sm">
+            <Typography variant="h6" align = "center" paragraph sx = {{ color: theme.palette.black.main, marginTop: 7, backgroundColor: theme.palette.cyan.main }}>
+              Copywrite © Volkov Ilya
+            </Typography>
+     </Container> 
